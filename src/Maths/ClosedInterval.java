@@ -53,5 +53,8 @@ public class ClosedInterval {
         return higherLimit - lowerLimit;
     }
 
+    public double getMiddle() {
+        return (getLowerLimit() + getHigherLimit()) / 2;
+    }
 }
 

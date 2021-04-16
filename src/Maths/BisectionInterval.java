@@ -42,7 +42,4 @@ public class BisectionInterval extends ClosedInterval {
         return getHigherLimit() - getLowerLimit();
     }
 
-    public double getMiddle() {
-        return (getLowerLimit() + getHigherLimit()) / 2;
-    }
 }
