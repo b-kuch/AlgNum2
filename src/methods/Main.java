@@ -15,11 +15,12 @@ public class Main {
 			b = in.nextDouble();
 			System.out.print("Podaj epsilon: ");
 			eps = in.nextDouble();
-			if(F.f(a) * F.f(b) < 0)
+			if(F.f(a) * F.f(b) < 0 && eps > 0)
 				validData = true;
 			else
 				System.out.println("Nieprawidłowe dane");
 		}
+		in.close();
 		BisectionMethod bisection = new BisectionMethod(a, b, eps);
 		SecantMethod secant = new SecantMethod(a, b, eps);
 		SecantMethodChoice secantCh = new SecantMethodChoice(a,b, eps);

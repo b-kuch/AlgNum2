@@ -8,11 +8,33 @@ public class BisectionMethod extends Function {
 	int steps;
 	int maxSteps = 1000;
 	
-	BisectionMethod(double a, double b, double eps) {	
-		this.a = a;
-		this.b = b;
+	BisectionMethod(double aa, double bb, double eps) {	
+		a = aa;
+		b = bb;
 		epsilon = eps;
 		steps = 0;
+		
+		while(Math.abs(a-b) > epsilon && steps < maxSteps) {
+			steps++;
+			c = (a+b)/2;
+			if(f(c) == 0) {
+				break;
+			}
+			else if(f(a) * f(c) < 0){
+				b = c;
+			}
+			else {
+				a = c;
+			}
+		}
+	}
+	
+	BisectionMethod(double aa, double bb, double eps, int maxS) {	
+		a = aa;
+		b = bb;
+		epsilon = eps;
+		steps = 0;
+		maxSteps = maxS;
 		
 		while(Math.abs(a-b) > epsilon && steps < maxSteps) {
 			steps++;

@@ -22,6 +22,21 @@ public class SecantMethod extends Function {
 		}
 	}
 	
+	SecantMethod(double aa, double bb, double eps, int maxS) {
+		a = aa;
+		b = bb;
+		epsilon = eps;
+		steps = 0;
+		maxSteps = maxS;
+		
+		while(Math.abs(a-b) > epsilon && steps < maxSteps) {
+			c = b - (f(b)*(b-a))/(f(b)-f(a));
+			a = b;
+			b = c;
+			steps++;
+		}
+	}
+	
 	public String toString() {
 		return "Miejsce zerowe: " + c + ".\nDokładność " + epsilon + ".\nLiczba kroków "
 				+ steps + ".\nFałszywy pozytyw " + falseResult() + ".\n\n";
