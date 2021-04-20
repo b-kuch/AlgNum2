@@ -24,7 +24,7 @@ public class SecantMethod extends Function {
 	
 	public String toString() {
 		return "Miejsce zerowe: " + c + ".\nDokładność " + epsilon + ".\nLiczba kroków "
-				+ steps + ".\nFałszywy pozytyw " + falseResult() + "\n.";
+				+ steps + ".\nFałszywy pozytyw " + falseResult() + ".\n";
 	}
 	
 	String falseResult() {

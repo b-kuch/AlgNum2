@@ -31,9 +31,8 @@ public class SecantMethodChoice extends Function {
 	}
 	
 	public String toString() {
-		System.out.println("a " + a + " b " + b);
 		return "Miejsce zerowe: " + c + ".\nDokładność " + epsilon + ".\nLiczba kroków "
-				+ steps + ".\nFałszywy pozytyw " + falseResult() + "\n.";
+				+ steps + ".\nFałszywy pozytyw " + falseResult() + ".\n";
 	}
 	
 	String falseResult() {
