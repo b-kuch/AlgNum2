@@ -30,6 +30,6 @@ public class BisectionMethod extends Function {
 	}
 	
 	public String toString() {
-		return "Miejsce zerowe: " + c + ".\nDokładność " + epsilon + ".\nLiczba kroków " + steps + ".\n";
+		return "Miejsce zerowe: " + c + ".\nDokładność " + epsilon + ".\nLiczba kroków " + steps + ".\n\n";
 	}
 }

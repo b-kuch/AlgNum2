@@ -25,7 +25,7 @@ public class Main {
 		SecantMethodChoice secantCh = new SecantMethodChoice(a,b, eps);
 		System.out.print("Metoda bisekcji:\n" + bisection);
 		System.out.print("Metoda siecznych:\n" + secant);
-		System.out.print("Metoda siecznych2:\n" + secantCh);
+		System.out.print("Metoda siecznych z wyborem:\n" + secantCh);
 
 	}
 

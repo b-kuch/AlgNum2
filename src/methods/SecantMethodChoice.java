@@ -32,13 +32,7 @@ public class SecantMethodChoice extends Function {
 	
 	public String toString() {
 		return "Miejsce zerowe: " + c + ".\nDokładność " + epsilon + ".\nLiczba kroków "
-				+ steps + ".\nFałszywy pozytyw " + falseResult() + ".\n";
+				+ steps + ".\n\n";
 	}
 	
-	String falseResult() {
-		if(f(a) * f(b) < 0)
-			return "nie";
-		else
-			return "tak";
-	}
 }
