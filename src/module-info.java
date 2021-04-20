@@ -1,0 +1,2 @@
+module AlgorytmyNumeryczne2 {
+}
