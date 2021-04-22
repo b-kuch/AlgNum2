@@ -9,25 +9,25 @@ public class Main {
 		Function F = new Function();
 		Scanner in = new Scanner(System.in);
 		while(validData == false) {
-			System.out.print("Podaj a: ");
+			System.out.print("Podaj lewy koniec przedziału: ");
 			a = in.nextDouble();
-			System.out.print("Podaj b: ");
+			System.out.print("Podaj prawy koniec przedziału: ");
 			b = in.nextDouble();
-			System.out.print("Podaj epsilon: ");
+			System.out.print("Podaj dokładność: ");
 			eps = in.nextDouble();
 			if(F.f(a) * F.f(b) < 0 && eps > 0)
 				validData = true;
 			else
 				System.out.println("Nieprawidłowe dane");
 		}
-		in.close();
 		BisectionMethod bisection = new BisectionMethod(a, b, eps);
 		SecantMethod secant = new SecantMethod(a, b, eps);
-		SecantMethodChoice secantCh = new SecantMethodChoice(a,b, eps);
-		System.out.print("Metoda bisekcji:\n" + bisection);
+		ModifiedSecantMethod secantM = new ModifiedSecantMethod(a,b, eps);
+		System.out.print("\nMetoda bisekcji:\n" + bisection);
 		System.out.print("Metoda siecznych:\n" + secant);
-		System.out.print("Metoda siecznych z wyborem:\n" + secantCh);
-
+		System.out.print("Metoda siecznych z wyborem:\n" + secantM);
+		in.next();
+		in.close();
 	}
 
 }

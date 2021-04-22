@@ -1,6 +1,6 @@
 package methods;
 
-public class SecantMethodChoice extends Function {
+public class ModifiedSecantMethod extends Function {
 	volatile double a;
 	volatile double b;
 	double c;
@@ -8,7 +8,7 @@ public class SecantMethodChoice extends Function {
 	int steps;
 	int maxSteps = 1000;
 	
-	SecantMethodChoice(double aa, double bb, double eps) {
+	ModifiedSecantMethod(double aa, double bb, double eps) {
 		a = aa;
 		b = bb;
 		epsilon = eps;
@@ -30,7 +30,7 @@ public class SecantMethodChoice extends Function {
 		}
 	}
 	
-	SecantMethodChoice(double aa, double bb, double eps, int maxS) {
+	ModifiedSecantMethod(double aa, double bb, double eps, int maxS) {
 		a = aa;
 		b = bb;
 		epsilon = eps;
