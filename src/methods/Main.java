@@ -25,7 +25,7 @@ public class Main {
 		ModifiedSecantMethod secantM = new ModifiedSecantMethod(a,b, eps);
 		System.out.print("\nMetoda bisekcji:\n" + bisection);
 		System.out.print("Metoda siecznych:\n" + secant);
-		System.out.print("Metoda siecznych z wyborem:\n" + secantM);
+		System.out.print("Zmodyfiowana metoda siecznych:\n" + secantM);
 		in.next();
 		in.close();
 	}
