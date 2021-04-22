@@ -48,4 +48,5 @@ public class SecantMethod extends Function {
 		else
 			return "tak";
 	}
+	
 }

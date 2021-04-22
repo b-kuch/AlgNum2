@@ -55,7 +55,14 @@ public class ModifiedSecantMethod extends Function {
 	
 	public String toString() {
 		return "Miejsce zerowe: " + c + ".\nDokładność " + epsilon + ".\nLiczba kroków "
-				+ steps + ".\n\n";
+				+ steps + "." + divergence() + "\n\n";
+	}
+	
+	String divergence() {
+		if(steps == maxSteps)
+			return "\nMetoda jest rozbieżna.";
+		else
+			return "";
 	}
 	
 }
