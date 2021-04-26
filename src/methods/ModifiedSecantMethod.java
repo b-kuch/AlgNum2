@@ -55,7 +55,7 @@ public class ModifiedSecantMethod extends Function {
 	
 	public String toString() {
 		return "Miejsce zerowe: " + c
-				+ ".\nDokładność " + epsilon
+				+ ".\nDokładność " + String.format("%.3f", Math.abs(b-a))
 				+ ".\nLiczba kroków " + steps + "."
 				+ stepLimit() + "\n\n";
 	}

@@ -52,6 +52,6 @@ public class BisectionMethod extends Function {
 	}
 	
 	public String toString() {
-		return "Miejsce zerowe: " + c + ".\nDokładność " + epsilon + ".\nLiczba kroków " + steps + ".\n\n";
+		return "Miejsce zerowe: " + c + ".\nDokładność " + String.format("%.5f", Math.abs(b-a)) + ".\nLiczba kroków " + steps + ".\n\n";
 	}
 }

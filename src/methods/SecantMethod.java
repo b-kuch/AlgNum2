@@ -38,7 +38,7 @@ public class SecantMethod extends Function {
 	}
 	
 	public String toString() {
-		return "Miejsce zerowe: " + c + ".\nDokładność " + epsilon + ".\nLiczba kroków "
+		return "Miejsce zerowe: " + c + ".\nDokładność " + String.format("%.3f", Math.abs(b-a)) + ".\nLiczba kroków "
 				+ steps + ".\nFałszywy wynik " + falseResult() + ".\n\n";
 	}
 	
@@ -48,5 +48,4 @@ public class SecantMethod extends Function {
 		else
 			return "tak";
 	}
-	
 }
